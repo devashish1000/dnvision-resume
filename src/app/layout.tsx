@@ -5,9 +5,10 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'HireReady — Free AI Resume Builder | Tailor Resume to Any Job',
-  description: 'Free AI-powered resume builder. Paste any job description and get an ATS-optimized, perfectly tailored resume in seconds. No signup. No cost.',
-  keywords: ['AI resume builder', 'free resume tailoring', 'ATS resume optimizer', 'resume maker online', 'job description matcher', 'resume keyword optimizer', 'free AI cover letter'],
+  metadataBase: new URL('https://dnvision-resume.vercel.app'),
+  title: 'HireReady — Free AI Resume Builder | Tailor Resume to Any Job in 30s',
+  description: 'Free AI-powered resume tailor. Paste any job description and get an ATS-optimized, perfectly matched resume in seconds. No signup. Zero cost.',
+  keywords: ['AI resume builder', 'free resume tailoring', 'ATS resume optimizer', 'resume maker online', 'job description matcher', 'resume keyword optimizer', 'free AI cover letter', 'tailor resume to job'],
   authors: [{ name: 'DNVision', url: 'https://dnvision.ai' }],
   creator: 'DNVision',
   publisher: 'DNVision',
@@ -22,9 +23,6 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: 'YOUR_GOOGLE_VERIFICATION_CODE',
-  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
@@ -33,7 +31,7 @@ export const metadata: Metadata = {
     title: 'HireReady — Free AI Resume Builder',
     description: 'AI-tailored resumes that pass ATS and land interviews. Free, instant, no signup.',
     images: [{
-      url: 'https://dnvision-resume.vercel.app/og-image.png',
+      url: '/og-image.png',
       width: 1200,
       height: 630,
       alt: 'HireReady - AI Resume Builder',
@@ -44,7 +42,7 @@ export const metadata: Metadata = {
     title: 'HireReady — Free AI Resume Builder',
     description: 'AI-tailored resumes that pass ATS and land interviews. Free, instant, no signup.',
     creator: '@dnvision',
-    images: ['https://dnvision-resume.vercel.app/og-image.png'],
+    images: ['/og-image.png'],
   },
   alternates: {
     canonical: 'https://dnvision-resume.vercel.app',
