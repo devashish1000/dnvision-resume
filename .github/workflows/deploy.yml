@@ -2,12 +2,11 @@ name: Vercel Production Deployment
 
 concurrency:
   group: production-deploy
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 permissions:
   contents: read
   deployments: write
-  id-token: write
 
 on:
   push:
@@ -17,7 +16,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
 
@@ -35,6 +34,8 @@ jobs:
 
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v25
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
