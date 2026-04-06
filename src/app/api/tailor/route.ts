@@ -71,7 +71,7 @@ Rewrite all bullets to include exact keywords from the JD. Make it sound natural
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${apiKey}`,
-        'HTTP-Referer': 'https://hire-ready.vercel.app',
+        'HTTP-Referer': 'https://dnvision-resume.vercel.app',
         'X-Title': 'HireReady',
         'Content-Type': 'application/json',
       },
