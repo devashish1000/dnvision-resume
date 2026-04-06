@@ -62,7 +62,7 @@ Rewrite all bullets to include exact keywords from the JD. Make it sound natural
             ]
           }
         ],
-        skills: jd.split(' ').filter(w => w.length > 4).slice(0, 8),
+        skills: jd.split(' ').filter((w: string) => w.length > 4).slice(0, 8),
         score: Math.floor(Math.random() * 12) + 85
       })
     }
