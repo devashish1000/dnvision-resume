@@ -36,6 +36,7 @@ Rewrite all bullets to include exact keywords from the JD. Make it sound natural
 
     const apiKey = process.env.OPENROUTER_API_KEY || process.env.NEXT_PUBLIC_OPENROUTER_API_KEY
 
+
     if (!apiKey) {
       // Fallback: If no API key configured, return mock data that demonstrates the flow
       return NextResponse.json({
