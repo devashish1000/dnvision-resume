@@ -1,1 +1,1 @@
-redploy-$(date +%s)
+redeploy-1775483448
