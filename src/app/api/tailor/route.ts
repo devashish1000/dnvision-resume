@@ -34,8 +34,7 @@ Return ONLY valid JSON with this structure:
 
 Rewrite all bullets to include exact keywords from the JD. Make it sound natural but optimized.`
 
-    const apiKey = process.env.OPENROUTER_API_KEY || process.env.NEXT_PUBLIC_OPENROUTER_API_KEY
-
+    const apiKey = process.env.OPENROUTER_API_KEY || ''
 
     if (!apiKey) {
       // Fallback: If no API key configured, return mock data that demonstrates the flow
